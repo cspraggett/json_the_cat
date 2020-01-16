@@ -9,7 +9,7 @@ const fetchBreedDescription = (breedName, callback) => {
       callback("Breed not found");
     } else {
       const data = JSON.parse(body);
-      callback(null, data[0].description);
+      callback(null, data[0].description.toString());
     }
   });
 };
